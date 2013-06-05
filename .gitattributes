@@ -1,0 +1,4 @@
+travis.yml export-ignore
+phpunit.xml.dist export-ignore
+src/SIP export-ignore
+vendor export-ignore

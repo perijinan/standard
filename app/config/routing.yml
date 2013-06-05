@@ -1,0 +1,15 @@
+main_bundle:
+    resource: "@AppBundle/Resources/config/routing.xml"
+    prefix: /
+    
+izin_bundle:
+    resource: "@AdminBundle/Resources/config/routing.xml"
+    prefix: /
+    
+proses_bundle:
+    resource: "@ProsesBundle/Resources/config/routing.xml"
+    prefix: /
+    
+user_bundle:
+    resource: "@UserBundle/Resources/config/routing.xml"
+    prefix: /
