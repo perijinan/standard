@@ -17,8 +17,8 @@ AnnotationRegistry::registerLoader(array($loader, 'loadClass'));
 ExceptionFactory::addPackage('SIP');
 ExceptionFactory::register();
 
-Message::addCatalog('SIP',__DIR__.'/../src/SIP/Core/Resources/messages');
-Message::addCatalog('SIP',__DIR__.'/../src/SIP/Admin/Resources/messages');
+Message::addCatalog('SIP',__DIR__.'/../vendor/perijinan/core/SIP/Core/Resources/messages');
+//Message::addCatalog('SIP',__DIR__.'/../vendor/perijinan/admin/SIP/Admin/Resources/messages');
 $cacheDir = __DIR__.'/cache/dayax/messages';
 if(!is_dir($cacheDir)){
     mkdir($cacheDir,0777,TRUE);

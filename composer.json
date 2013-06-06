@@ -29,7 +29,9 @@
         "knplabs/knp-menu-bundle": "dev-master",
         "knplabs/knp-menu": "dev-master",
         "knplabs/knp-markdown-bundle": "1.2.*@dev",
-        "friendsofsymfony/user-bundle": "@dev"    
+        "friendsofsymfony/user-bundle": "@dev",
+
+        "perijinan/core": "@dev"
     },
     "require-dev":{
         "dayax/symfony-test": "@dev",
@@ -39,6 +41,12 @@
         "behat/mink-extension": "@dev",
         "behat/mink-browserkit-driver": "@dev"
     },
+    "repositories": [
+        {
+           "type": "git",
+           "url": "git@bitbucket.org:perijinan/core.git"
+        }
+    ],
     "scripts": {
         "post-install-cmd": [
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
@@ -58,7 +66,7 @@
     "config": {
         "bin-dir": "bin"
     },
-    "minimum-stability": "alpha",
+    "minimum-stability": "dev",
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
